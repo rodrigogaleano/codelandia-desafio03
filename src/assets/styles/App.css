@@ -1,0 +1,274 @@
+header {
+    background-color: #D7D4FF;
+}
+
+.cabecalho {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    height: 560px;
+}
+
+.cabecalho-conteudo {
+    width: 30%;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+}
+
+.cabecalho-conteudo h1 {
+    color: #2B2B2B;
+    max-width: 340px;
+}
+
+.cabecalho-conteudo p {
+    margin: 25px 0;
+    font-size: 19px;
+    color: #555555;
+}
+
+.cabecalho-conteudo button {
+    width: 150px;
+    height: 50px;
+    background-color: #6C63FF;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cabecalho-imagem {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho-imagem img {
+    width: 80%;
+}
+
+/* ========== CONTEUDO ========== */
+
+.conteudo-container {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    /* width: calc(30% - 50px); */
+    max-width: 33vh;
+    margin: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-capa {
+    height: 220px;
+}
+
+.card-cor-1 {
+    background-color: #FF6363;
+}
+
+.card-cor-2 {
+    background-color: #63ECFF;
+}
+
+.card-cor-3 {
+    background-color: #F363FF;
+}
+
+.card-cor-4 {
+    background-color: #63FF73;
+}
+
+.card-cor-5 {
+    background-color: #FFDD63;
+}
+
+.card-cor-6 {
+    background-color: #6663FF;
+}
+
+.card-conteudo {
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow-y: auto;
+}
+
+.card h2 {
+    color: #2B2B2B;
+}
+
+.card p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #555555;
+}
+
+/* ========== RODAPÉ ========== */
+
+.rodape {
+    background-color: #D7D4FF;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 30px 0;
+
+}
+
+.formulario h2 {
+    margin-bottom: 20px;
+    color: #2B2B2B;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.formulario input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.formulario input:focus {
+    outline: none;
+}
+
+.formulario textarea {
+    width: 100%;
+    height: 100px;
+    border: none;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.formulario textarea:focus {
+    outline: none;
+}
+
+.formulario button {
+    width: 100%;
+    height: 50px;
+    background-color: #6C63FF;
+    box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    margin: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ========== MEDIAQUERY ========== */
+
+@media (max-width: 1500px) {
+    .cabecalho-conteudo {
+        width: 40%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+    }
+}
+
+@media (max-width: 1325px) {
+    .card {
+        max-width: 50vh;
+    }
+}
+
+@media (max-width: 1310px) {
+    .card {
+        max-width: 40vh;
+    }
+}
+
+@media (max-width: 1018px) {
+    .card {
+        max-width: 30vh;
+    }
+}
+
+@media (max-width: 825px) {
+
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .cabecalho-conteudo {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .cabecalho-imagem {
+        width: 100%;
+    }
+
+    .cabecalho-imagem img {
+        width: 100%;
+    }
+
+    .card {
+        max-width: 80vh;
+        margin: 30px;
+    }
+
+    .rodape{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .cabecalho, .conteudo-container {
+        width: 80%;
+    }
+
+    .card{
+        max-width: 100%;
+        margin: 30px 10px;
+    }
+
+    .card-capa {
+        height: 150px;
+    }
+
+    .card-conteudo h2{
+        font-size: 18px;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+}
